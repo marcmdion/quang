@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Book Shop City Christchurch. Old Bookshop where you can visit or buy books. Check out our new arrivals books first edition showcase, featured author book of the week">
+	<meta name="keywords" content="Christchurch Bookshop, Book store, old books, rare books, hard find books, books valuations, Book restoration, book shop">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ye Olde Bookshop</title>
+    <link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/responsive-nav.js"></script>
+</head>
+<body>
+<header>
+		<h1>Ye Olde Bookshop</h1>
+	</header>
+	
+	<nav class="nav-collapse">
+		<ul>
+            <li><a href="home.html">home</a></li>
+			<li><a href="about_us.html">about us</a></li>
+			<li><a href="new_arrivals.html">new arrivals</a></li>
+			<li><a href="books.html" class="selected">books</a></li>
+			<li><a href="restoration.html">restoration</a></li>
+			<li><a href="enquiries.html">enquiries</a></li>
+		</ul>
+	</nav>
+	<div id="contents">
+        <main>
+			<div class="need_to_know">
+				<h2>Photographs</h2>
+					<p>Please feel free to send photographs, but keep combined attachments to less than 5MB per message. Please don't crop the pictures - we need to see the edges.<p>
+				<h2>Valuations</h2>
+					<p>We regret we cannot offer valuations by email. We cannot value large collections of books, through we are not interested in buying them.</p>
+					
+				<h2>Response time</h2>
+					<p>Due to high volume of emails we receive each day, we cannot always reply to every offer. If you have not heard from us within 7 days, you can assume we are not interested in purchasing your book. We will always respond by email.</p>
+			</div> 
+		
+			<div>
+				<h2 class="complete_our_form">COMPLETE OUR FORM</h2>
+				<div class="valuations_form">
+					<form 
+							name="completeform"	
+							action="mailto:enquiries@yeoldebookshop.co.nz"
+							method="POST"
+							enctype="text/plain"
+							onsubmit ="return validateForm();">
+							
+							<div class="firstlast_name">
+								<div class="ourformStyle">
+									<label for ="firstName">First Name</label><span class="reder"> (required)</span> <br>
+									<input type="text" id="firstName" name="first-Name"/><br><br>
+								</div>
+							
+								<div class="ourformStyle">
+									<label for="lastName">Last Name</label><span class="reder"> (required)</span><br>
+									<input type="text" id="lastName" name="last-Name"/><br><br>
+								</div>					
+							</div>				
+							<div class="email_address">
+								<div class="ourformStyle">
+									<label for="userEmail">Email</label><span class="reder"> (required)</span><br>
+									<input type="text" id="userEmail" name="user-Email"/><br>
+								</div>
+								<div class="ourformStyle">
+									<label for="confirmEmail">Confirm Email</label><span class="reder"> (required)</span> <br>
+									<input type="text" id="confirmEmail" name="confirm-Email"/><br><br>
+								</div>
+							</div>
+							
+							<div class="author_title">
+								<div class="ourformStyle">
+									<label for="authorname">Author's Name</label><span class="reder"> (required)</span><br>
+									<input type="text" id = "authorname" name="author-name"/><br><br>
+								</div>
+								<div class="ourformStyle">
+									<label for="booktitle">Title</label><span class="reder"> (required)</span><br>
+									<input type="text" id = "booktitle" name="book-title"/><br>
+								</div>
+							</div>
+						
+							<div class="edition_publication">
+								<div class="ourformStyle">
+									<label for="editionprint">Editions/printing</label><br>
+									<input type="text" id = "editionprint" name="edition-print"/><br>
+								</div>
+								<div class="ourformStyle">
+									<label for="publicationplace">Place of Publication</label><br>
+									<input type="text" id = "publicationplace" name="publication-place"/><br>
+								</div>
+							</div>
+							
+							<div class="textformStyle">
+								<label for="descriptionText" class="textlabel">Description of the Binding:</label><br>
+								<textarea id = "descriptionText" name="description-Text" rows="6" cols="40" ></textarea> 
+							</div>
+										
+							<div class="textformStyle">
+								<label for="majordefectsText" class="textlabel">Major defects:</label><br>
+								<textarea id = "majordefectsText" name="majordefects-Text" rows="6" cols="40" ></textarea> 
+							</div>					
+							<div class="ourformStyle">
+							<input type="submit" value="Send">
+							</div>
+						
+						</form>
+				</div>
+						
+				
+			</div>
+
+        </main>
+    </div>
+	
+	<footer>
+		
+		<p class="footer">&copy; Copyright 2019 Ye Olde Bookshop all right reserved.</p>
+	</footer>
+    <script>
+	    // The default label is the word "Menu". but we can use a special character to
+		// give us the "hamburger" icon.		
+		var navigation = responsiveNav(".nav-collapse", {
+			insert: "before",
+			label: "&#8801;"
+		});
+    </script>
+
+</body>
+</html>
